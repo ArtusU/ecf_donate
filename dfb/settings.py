@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'ecfdonation.herokuapp.com']
+ALLOWED_HOSTS = ['localhost:8000', '127.0.0.1', 'ecfdonation.herokuapp.com']
 
 
 # Application definition
