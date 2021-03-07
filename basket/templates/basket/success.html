@@ -1,0 +1,12 @@
+{% extends 'basket/template.html' %}
+{% load static %}
+{% block content %}
+	<div id="box">
+		<img id="succes-icon" src="{% static 'images/logo_lg.png' %}">
+		<h4>Thank you for your contribution of £{{amount}}!</h4>
+		<p>Your donations go towards providing fruit&veg basket to those unable to access affordable healthy food.</p>
+		<hr>
+		<a class="myButton" href="{% url 'index' %}">&#x2190;Back to donation page</a>
+	</div>
+
+{% endblock content %}
